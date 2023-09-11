@@ -17,7 +17,7 @@ p {
 }
 
 br {
-	display: block;
+	display: none;
 }
 
 blockquote {
@@ -27,6 +27,10 @@ blockquote {
 	margin: 0;
 	margin-bottom: 0.5em;
 	font-style: italic;
+}
+
+blockquote br:not(:first-child) {
+    display: unset;
 }
 
 nav {
